@@ -1,0 +1,19 @@
+extends box
+
+block variables
+  - mainClass = 'projects'
+
+block content
+  each project, id in projects
+    .project
+      .description
+        h3= project.name
+        p= project.description
+
+        if(project.keywords)
+          ul.keywords
+            each tag in project.keywords
+              li= tag
+
+      .images
+        img(src='/projects/' + project.name.toLowerCase() + '.png')
