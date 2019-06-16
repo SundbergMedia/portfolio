@@ -1,0 +1,14 @@
+extends box
+
+block variables
+  - mainClass = 'alt'
+
+block content
+  h3 Get in touch
+  p= contact
+
+  form(method='post')
+    input(name='email' placeholder='Your email')
+    input(name='name' placeholder='What can I help you with?')
+    textarea(name='message' placeholder='Message')
+    button#send Send
