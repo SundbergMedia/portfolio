@@ -1,0 +1,28 @@
+mixin link(src, name)
+  li
+    a(href='#' + src)=src
+
+mixin links(list)
+  ul
+    each name in list
+      +link(name)
+
+mixin list(data, className)
+  if(data)
+    ul(class=className)
+      each item in data
+        li= item
+
+mixin icon(name)
+  - nname = name.toLowerCase()
+  - skall = (nname in iconMap) ? iconMap[nname] : nname + '-plain'
+  - if(svgIcons.includes(nname))
+    img(src='/img/icons/' + nname + '.svg' alt=name).icon
+  - else
+    i(class='devicon-' + skall alt=name).icon
+
+mixin eachlist(data)
+  ul
+    each item in data
+      li
+        +icon(item)
