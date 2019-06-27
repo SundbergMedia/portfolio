@@ -1,0 +1,13 @@
+extends box
+
+include mixins
+
+block variables
+  - mainClass = 'uff'
+  - name = 'start'
+
+block content
+  h2=title
+  p.lead=introduction
+  img(src='/logo.svg' alt='Logo')
+  .ad=ad
