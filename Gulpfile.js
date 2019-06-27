@@ -34,6 +34,7 @@ const watchFiles = () => {
   watch(config.paths.style, css)
   watch(config.paths.views, html)
   watch(config.paths.js, js)
+  watch('./data.js', html)
 }
 
 // setup browserSync; auto-reload compiled assets in open browser
