@@ -1,0 +1,24 @@
+extends box
+
+include mixins
+
+
+block variables
+  - mainClass = 'test'
+  - name = 'skills'
+
+block content
+  h1 Skills
+
+  .stuff
+    each typ, id in skills
+      h3(style='float: left;')= id + ' -> ' + typ
+      //- eachlist(typ)
+      
+      hr(style='clear: both;')
+
+      .skillz
+        each skill in typ
+          +icon(skill)
+
+      hr(style='clear: both;')
