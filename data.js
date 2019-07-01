@@ -75,6 +75,13 @@ const data = {
 
   ],
 
+  social: {
+    linkedin: 'https://linkedin.com/in/fredrik-sundberg-02994272/',
+    facebook: 'https://www.facebook.com/fsundberg1',
+    github: 'https://github.com/theted',
+    codepen: 'https://codepen.io/theted/'
+  },
+
   iconMap: {
     react: 'react-original',
     less: 'less-plain-wordmark'
