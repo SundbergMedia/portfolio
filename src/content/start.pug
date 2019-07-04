@@ -3,11 +3,11 @@ extends box
 include mixins
 
 block variables
-  - mainClass = 'uff'
+  - mainClass = 'start'
   - name = 'start'
 
 block content
   h2=title
-  p.lead=introduction
+  p.lead !{introduction}
   img(src='/logo.svg' alt='Logo')
-  .ad=ad
+  a(htef='#contact').ad=ad
