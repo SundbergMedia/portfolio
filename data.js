@@ -2,32 +2,33 @@
 const data = {
 
   title: 'Fullstack javascript developer & CSS ninja',
-  introduction: 'I\'m Fredrik Sundberg, a full-stack web developer based in Kalmar, Sweden. My passion is building highly interactive websites.',
+  introduction: 'I\'m <strong>Fredrik Sundberg</strong>, a full-stack web developer based in <strong>Kalmar</strong>, Sweden. I create modern optimizer wehsites. My passion is building highly interactive websites.',
   ad: 'Currently looking for new projects!',
 
   skills: {
-    'languages': ['javascript', 'nodejs', 'php', 'csharp', 'python'],
-    'javascript frameworks': ['react', 'angularjs', 'jquery'],
-    'backend frameworks & libraries': ['codeigniter', 'express', 'dot-net', 'wordpress'],
-    'css preprocessors': ['stylus', 'scss', 'sass', 'less'],
-    'task runners': ['webpack', 'gulp', 'grunt'],
-    'databases': ['MySQL', 'MongoDB', 'Redis', 'postgresql'],
-    'web servers': ['apache', 'nginx'],
-    'static site generators': ['jekyll'],
-    'prefered tools': ['github', 'slack', 'visualstudio', 'ubuntu', 'chrome']
+    'Programming languages': ['Javascript', 'Nodejs', 'PHP', 'Csharp', 'Python'],
+    'Javascript frameworks': ['React', 'AngularJS', 'jQuery'],
+    'Back-end frameworks & libraries': ['CodeIgniter', 'Express', 'dot-net', 'WordPress'],
+    'CSS preprocessors': ['Stylus', 'Sass', 'LESS'],
+    'Task runners': ['webpack', 'Gulp', 'Grunt'],
+    'Databases': ['MySQL', 'MongoDB', 'Redis', 'Postgresql'],
+    'Templating lanuages': ['Pug', 'Handlebars', 'HAML'],
+    'Servers': ['Apache', 'nginx'],
+    // 'Static site generators': ['jekyll'],
+    'Tools of choice': ['Bisualstudio', 'GitHub', 'Slack', 'Ubuntu', 'Chrome']
   },
 
   projects: [
     {
       name: 'BooKing',
       url: 'http://booking.sundbergmedia.com',
-      description: 'Geographical booking system',
+      description: 'Geographical booking system with SMS integration. Utilizing Google Maps directions API to find the closest users to a defined location.',
       features: [
         'Integration with Google Maps API',
         'Send & receive SMS from users',
         'Real-time update state updates through websockets integration'
       ],
-      keywords: ['React', 'node', 'express', 'API', 'websockets']
+      keywords: ['React', 'Nodejs', 'Express', 'MongoDB', 'API', 'Websockets']
     },
 
     {
@@ -39,13 +40,13 @@ const data = {
         'State handling utilizing local storage',
         'Customizable widgets!'
       ],
-      keywords: ['javascript', 'html5', 'css3', 'websockets', 'web components']
+      keywords: ['Javascript', 'HTML5', 'CSS3', 'Webpack', 'Websockets', 'Web components']
     },
 
     {
       name: 'Snippets',
       description: 'Snippets collections app. Part of assignment for server-based programming course at Linneaus University.',
-      keywords: ['Nodejs', 'express', 'MongoDB']
+      keywords: ['NodeJS', 'Express', 'MongoDB', 'Handlebars']
     },
 
     {
@@ -56,21 +57,21 @@ const data = {
         'Facebook integration',
         'Data import utilizing custom wordpress plugin'
       ],
-      keywords: ['nodejs', 'php', 'angularjs', 'express', 'facebook', 'api', 'wordpress', 'grunt', 'mysql']
+      keywords: ['NodeJS', 'php', 'angularjs', 'express', 'facebook', 'api', 'WordPress', 'Grunt', 'MySQL']
     },
 
     {
       name: 'Geometric shapes',
       url: 'http://shapes.sundbergmedia.com',
-      description: 'Exercise in object-oriented C#',
-      keywords: ['csharp', 'dot-net']
+      description: 'Exercise in object-oriented C#. Source code available upon request.',
+      keywords: ['Csharp', 'Dot-net']
     },
 
     {
       name: 'This very site',
       url: 'https://github.com/theted/portfolio',
-      description: 'Simple data driven static webpage. Source code available on github!',
-      keywords: ['Pug', 'Stylus', 'Gulp']
+      description: 'Simple data-driven statically generated site. Light-weight & optimized. Source code available on github.',
+      keywords: ['Gulp', 'Stylus', 'Pug']
     }
 
   ],
@@ -87,7 +88,7 @@ const data = {
     less: 'less-plain-wordmark'
   },
 
-  svgIcons: ['stylus', 'handlebars', 'pug', 'express'],
+  svgIcons: ['stylus', 'handlebars', 'pug', 'express', 'haml'],
 
   version: 'app1.0.0',
   lorem: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab nemo velit aspernatur culpa esse possimus corrupti deserunt, dicta consequatur distinctio, qui officiis praesentium quam consequuntur fugiat illum ipsa tempore.',
