@@ -17,12 +17,13 @@ mixin icon(name)
   - nname = name.toLowerCase()
   - skall = (nname in iconMap) ? iconMap[nname] : nname + '-plain'
   - if(svgIcons.includes(nname))
-    img(src='/img/icons/' + nname + '.svg' alt=name).icon
+    img(src='/img/icons/' + nname + '.svg' alt=name title=name).icon
   - else
-    i(class='devicon-' + skall alt=name).icon
+    i(class='devicon-' + skall alt=name title=name).icon
 
-mixin eachlist(data)
-  ul
-    each item in data
-      li
-        +icon(item)
+mixin iconlist(icons)
+  .skillz
+    ul
+      each item in icons
+        li
+          +icon(item)

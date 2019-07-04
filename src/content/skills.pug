@@ -4,21 +4,17 @@ include mixins
 
 
 block variables
-  - mainClass = 'test'
+  - mainClass = 'skills'
   - name = 'skills'
 
 block content
-  h1 Skills
-
+  h2 Skills
+  p.lead I have expertice in among the following languages, frameworks & technologies:
+  
+  hr
+  
   .stuff
-    each typ, id in skills
-      h3(style='float: left;')= id + ' -> ' + typ
-      //- eachlist(typ)
-      
-      hr(style='clear: both;')
-
-      .skillz
-        each skill in typ
-          +icon(skill)
-
-      hr(style='clear: both;')
+    each technologies, name in skills
+      .skill
+        h3= name
+        +iconlist(technologies)
