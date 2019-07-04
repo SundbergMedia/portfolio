@@ -19,7 +19,8 @@ module.exports = {
       './dist/' + version + '.css',
       './dist/' + version + '.js',
       './dist/**/*.html'
-    ]
+    ],
+    browsers: []
   },
   pugConfig: {
     compileDebug: true,
@@ -28,8 +29,10 @@ module.exports = {
   },
   paths: {
     js: baseSrc + 'js/**.js',
-    style: baseSrc + 'style/**.styl',
-    views: baseSrc + 'content/**.pug'
+    style: baseSrc + 'style/style.styl',
+    // style: baseSrc + 'style/**.styl',
+    views: baseSrc + 'content/**.pug',
+    images: baseSrc + 'img/*/**.png' // TODO: support for jpg!
   },
   out: {
     css: version + '.css',
