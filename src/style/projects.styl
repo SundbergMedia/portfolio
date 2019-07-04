@@ -1,0 +1,65 @@
+@import mixins
+
+// TODO: inna refactor
+.project
+  display: flex
+  flex-wrap: wrap
+  margin: 4em 0
+  // border: 1px solid blue
+
+  .description, .images, .keywords
+    flex: 1
+
+  .description, .images
+    flex-basis: 100%
+    @media screen and (min-width: 800px)
+      flex-basis: 50%
+
+  .description
+    flex-wrap: wrap
+    padding: 1.2em 1.2em
+    align-self: stretch
+
+    p
+      width: 100%
+      align-self: start
+    
+    a
+      flex-basis: 100%
+
+
+  .keywords
+    display: block
+    align-self: flex-end
+    margin: 0.8em -1.2em -1.2em -1.2em
+    width: 100%
+    flex-grow: 1
+    background: #333
+    color: #eee
+    padding: 0.4em 0.7em
+
+    li
+      display: inline
+      padding: .1em .3em
+      background: blue
+
+  img
+    width: 100%
+    height auto
+    flex: 1 
+    object-fit: cover
+    
+  &:nth-child(odd)
+    background: #444
+
+  &:nth-child(even)
+    background: #666
+
+    .description
+      @media screen and (min-width: 800px)
+        order: 3
+
+// // media queries
+// @media screen and (min-width: 600px)
+//   .project  
+//     background: red !important
