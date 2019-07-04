@@ -4,8 +4,13 @@ include mixins
 
 block variables
   - mainClass = 'projects'
+  - name = 'projects'
 
 block content
+  h2 Projects
+  p.lead List of a few recent projects.
+
+
   each project, id in projects
     .project
       .description
@@ -13,8 +18,16 @@ block content
           h3=project.name
 
         p= project.description
-        +list(project.features, 'features').testa
-        +list(project.keywords, 'keywords')
+
+        //- //- features
+        //- +list(project.features, 'features').testa
+
+        //- +list(project.keywords, 'keywords')
+        .keywords
+          //- +iconlist(project.keywords)
+          each skill in project.keywords
+            +icon(skill)
+
 
       .images
         a(href=project.url target='_blank')
