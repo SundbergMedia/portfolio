@@ -7,6 +7,8 @@ const stylus = require('gulp-stylus')
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-csso')
 const uglify = require('gulp-uglify')
+const imageResize = require('gulp-image-resize')
+
 // data.version = config.version
 config.pugConfig.data = data
 
@@ -31,18 +33,29 @@ const js = () => src(config.paths.js)
 
 // watch files; compile on file event changes
 const watchFiles = () => {
-  watch(config.paths.style, css)
+  // watch(config.paths.style, css)
+  watch('src/style/**.styl', css)
   watch(config.paths.views, html)
   watch(config.paths.js, js)
   watch('./data.js', html)
 }
 
+// resize & optimize images
+const compileImages = () => src(config.paths.images)
+  .pipe(imageResize({
+    width: 600,
+    height: 600,
+    // crop: true,
+    upscale: false
+  }))
+  .pipe(dest('dist/img'))
+
 // setup browserSync; auto-reload compiled assets in open browser
 const bs = () => browserSync.init(config.bsConfig)
 
 // setup global build script; build all resources
-const build = parallel(html, css, js)
+const build = parallel(html, css, js, compileImages)
 // const build = series(html, css, js)
 const defaultTask = parallel(build, bs, watchFiles)
 
-module.exports = { bs, js, css, html, watch: watchFiles, default: defaultTask }
+module.exports = { build, bs, js, css, html, watch: watchFiles, default: defaultTask }
