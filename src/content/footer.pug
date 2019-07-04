@@ -1,0 +1,12 @@
+include mixins
+
+footer
+  div
+    p Fredrik Sundberg 2019
+
+  div
+    ul
+      each a, b in social
+        li
+          a(href=a target="_blank")= b
+            +icon(b)
