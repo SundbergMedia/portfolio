@@ -6,7 +6,7 @@ footer
 
   div
     ul
-      each a, b in social
+      each url, name in social
         li
-          a(href=a target="_blank")= b
-            +icon(b)
+          a(href=url target="_blank")
+            +icon(name)= name
