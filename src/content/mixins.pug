@@ -2,11 +2,6 @@ mixin link(src, name)
   li
     a(href='#' + src)=src
 
-mixin links(list)
-  ul
-    each name in list
-      +link(name)
-
 mixin list(data, className)
   if(data)
     ul(class=className)
@@ -27,3 +22,4 @@ mixin iconlist(icons)
       each item in icons
         li
           +icon(item)
+    br.clear

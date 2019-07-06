@@ -5,8 +5,8 @@ block variables
   - name = 'contact'
 
 block content
-  h3 Get in touch
-  p= contact
+  h2 Get in touch
+  p.lead= contact
 
   form(action=contactHost method='post')
     input(name='email' placeholder='Your email' required)
