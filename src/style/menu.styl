@@ -1,14 +1,31 @@
+@require config
+
 nav
-  background: #333
+  background: BGCOLOR
   width: 100%
   position: fixed
+  padding: 0.75em 1em
   border-bottom: 1px solid #999
+
   ul
+    display: flex
+    align-items: center
+
     li
       display: inline
+      
+      &:first-of-type
+        margin-right: .5em      
+
       a
         padding: 0 1em
         color: #eee
         border-right: 1px solid #eee
-        &:hover
-          background: blue
+        transition: all 500ms
+
+      a.active
+        color: ACCENT
+
+      &:last-of-type
+        a
+          border-right: none

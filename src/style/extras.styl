@@ -1,20 +1,37 @@
 /*!
- * Fixes
+ * Extras
  */
-
-nav
-  z-index: 10000
 
 
 // ad thing
 .ad
-  position absolute
   z-index: 2000000
-  width: 400px;
   background: #e43;
   text-align: center;
   line-height: 50px;
   color: #f0f0f0;
-  top: 155px;
-  right: 5px;
-  transform: rotate(45deg);
+  transition: all 400ms
+
+  &:hover
+    background: lighten(#e42, 20%)
+    cursor: pointer !important
+
+  @media screen and (min-width: 600px)
+    position absolute
+    width: 500px;
+    top: 100px;
+    right: -100px;
+    transform: rotate(45deg);
+
+/*!
+ * Fixes
+ */
+
+.clear
+  clear: both
+
+nav
+  z-index: 10000
+
+body
+  overflow-x hidden
