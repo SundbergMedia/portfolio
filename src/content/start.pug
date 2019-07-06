@@ -7,7 +7,14 @@ block variables
   - name = 'start'
 
 block content
-  h2=title
-  p.lead !{introduction}
-  img(src='/logo.svg' alt='Logo')
-  a(htef='#contact').ad=ad
+  .box
+    .box.columns
+      .box.columns
+        p.lead !{introduction}
+      div
+        each p in intro
+          p !{p}
+
+    img.logo(src='/logo.svg' alt='Logo')
+
+  a(href='#contact').ad=ad
