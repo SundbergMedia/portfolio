@@ -8,6 +8,7 @@ const concat = require('gulp-concat')
 const minifyCSS = require('gulp-csso')
 const uglify = require('gulp-uglify')
 const imageResize = require('gulp-image-resize')
+const spawn = require('child_process').spawn
 
 // data.version = config.version
 config.pugConfig.data = data
@@ -38,6 +39,8 @@ const watchFiles = () => {
   watch(config.paths.views, html)
   watch(config.paths.js, js)
   watch('./data.js', html)
+  watch('Gulpfile.js', reload)
+  watch('data.js', reload)
 }
 
 // resize & optimize images
@@ -52,6 +55,12 @@ const compileImages = () => src(config.paths.images)
 
 // setup browserSync; auto-reload compiled assets in open browser
 const bs = () => browserSync.init(config.bsConfig)
+
+// auto-reload
+const reload = () => {
+  spawn('gulp', [], { stdio: 'inherit' })
+  process.exit()
+}
 
 // setup global build script; build all resources
 const build = parallel(html, css, js, compileImages)
