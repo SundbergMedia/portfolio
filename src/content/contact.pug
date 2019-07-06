@@ -8,8 +8,9 @@ block content
   h3 Get in touch
   p= contact
 
-  form(method='post')
-    input(name='email' placeholder='Your email')
-    input(name='name' placeholder='What can I help you with?')
-    textarea(name='message' placeholder='Message')
+  form(action=contactHost method='post')
+    input(name='email' placeholder='Your email' required)
+    input(name='name' placeholder='Your name' required)
+    input(name='subject' placeholder='What can I help you with?' required)
+    textarea(name='message' placeholder='Message' required)
     button#send Send
