@@ -2,33 +2,36 @@
 const data = {
 
   title: 'Fullstack javascript developer & CSS ninja',
-  introduction: 'I\'m <strong>Fredrik Sundberg</strong>, a full-stack web developer based in <strong>Kalmar</strong>, Sweden. I create modern optimizer wehsites. My passion is building highly interactive websites.',
-  ad: 'Currently looking for new projects!',
+  introduction: 'Hello! I\'m <strong>Fredrik Sundberg</strong>, a full-stack web developer based in <strong>Kalmar</strong>, Sweden.',
+  ad: 'Looking for new projects!',
+  intro: [
+    'I create highlty modern, optimized wehsites. I have >10 years of experience in web development and love to always learn new things.',
+    'I am currently studying web programming at Linneaus University to further develop my skills.'
+  ],
 
   skills: {
-    'Programming languages': ['Javascript', 'Nodejs', 'PHP', 'Csharp', 'Python'],
+    'Programming languages': ['Javascript', 'NodeJS', 'PHP', 'Csharp'],
     'Javascript frameworks': ['React', 'AngularJS', 'jQuery'],
     'Back-end frameworks & libraries': ['CodeIgniter', 'Express', 'dot-net', 'WordPress'],
-    'CSS preprocessors': ['Stylus', 'Sass', 'LESS'],
-    'Task runners': ['webpack', 'Gulp', 'Grunt'],
-    'Databases': ['MySQL', 'MongoDB', 'Redis', 'Postgresql'],
+    'CSS preprocessors': ['Stylus', 'SASS', 'LESS'],
+    'Task runners': ['Gulp', 'Webpack', 'Grunt'],
+    'Databases': ['MySQL', 'MongoDB', 'Postgresql', 'Redis'],
     'Templating lanuages': ['Pug', 'Handlebars', 'HAML'],
-    'Servers': ['Apache', 'nginx'],
-    // 'Static site generators': ['jekyll'],
-    'Tools of choice': ['Bisualstudio', 'GitHub', 'Slack', 'Ubuntu', 'Chrome']
+    'Servers': ['Apache', 'nginx', 'Docker'],
+    'Tools of choice': ['Visualstudio', 'GitHub', 'Slack', 'Ubuntu', 'Chrome']
   },
 
   projects: [
     {
       name: 'BooKing',
-      url: 'http://booking.sundbergmedia.com',
+      url: 'https://www.youtube.com/watch?v=Oo0PQXGTSAs',
       description: 'Geographical booking system with SMS integration. Utilizing Google Maps directions API to find the closest users to a defined location.',
       features: [
         'Integration with Google Maps API',
         'Send & receive SMS from users',
         'Real-time update state updates through websockets integration'
       ],
-      keywords: ['React', 'Nodejs', 'Express', 'MongoDB', 'API', 'Websockets']
+      keywords: ['React', 'Nodejs', 'Express', 'MongoDB']
     },
 
     {
@@ -40,24 +43,26 @@ const data = {
         'State handling utilizing local storage',
         'Customizable widgets!'
       ],
-      keywords: ['Javascript', 'HTML5', 'CSS3', 'Webpack', 'Websockets', 'Web components']
+      keywords: ['Javascript', 'HTML5', 'CSS3', 'Webpack']
     },
 
     {
       name: 'Snippets',
+      url: 'http://snippets.sundbergmedia.com',
       description: 'Snippets collections app. Part of assignment for server-based programming course at Linneaus University.',
       keywords: ['NodeJS', 'Express', 'MongoDB', 'Handlebars']
     },
 
     {
       name: 'Shotluckan Stammiskortet',
+      url: 'https://stammiskortet.se',
       description: 'Hybrid web-app for bar chain Shotluckan. Users can mark shots as favorites, vote, share on facebook, sort & filter... Shots data is administered through a custom wordpress plugin.',
       features: [
         'Hybrid web app',
         'Facebook integration',
         'Data import utilizing custom wordpress plugin'
       ],
-      keywords: ['NodeJS', 'php', 'angularjs', 'express', 'facebook', 'api', 'WordPress', 'Grunt', 'MySQL']
+      keywords: ['NodeJS', 'php', 'angularjs', 'express', 'facebook', 'WordPress', 'Grunt', 'MySQL']
     },
 
     {
@@ -72,10 +77,18 @@ const data = {
       url: 'https://github.com/theted/portfolio',
       description: 'Simple data-driven statically generated site. Light-weight & optimized. Source code available on github.',
       keywords: ['Gulp', 'Stylus', 'Pug']
+    },
+
+    {
+      name: 'Guitar scales finder',
+      url: 'https://codepen.io/theted/pen/zrvaYP',
+      description: 'Guitar scale thing',
+      keywords: ['javascript', 'jquery', 'pug', 'stylus', 'codepen']
     }
 
   ],
 
+  // social links
   social: {
     linkedin: 'https://linkedin.com/in/fredrik-sundberg-02994272/',
     facebook: 'https://www.facebook.com/fsundberg1',
@@ -88,12 +101,13 @@ const data = {
     less: 'less-plain-wordmark'
   },
 
-  svgIcons: ['stylus', 'handlebars', 'pug', 'express', 'haml'],
+  // icons which use SVG
+  svgIcons: ['stylus', 'handlebars', 'pug', 'express', 'haml', 'linkedin', 'codepen'],
 
   version: 'app1.0.0',
   lorem: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab nemo velit aspernatur culpa esse possimus corrupti deserunt, dicta consequatur distinctio, qui officiis praesentium quam consequuntur fugiat illum ipsa tempore.',
-  contact: 'Bla bla',
-  contactHost: 'http://localhost:3000/'
+  contact: 'What can I do for your project? Get in touch and let us work together!',
+  contactHost: 'http://contact.sundbergmedia.com/'
 
 }
 
