@@ -1,4 +1,11 @@
 include mixins
 
+- links = ['start', 'projects', 'skills', 'contact']
+
 nav
-  +links(['start', 'skills', 'projects', 'contact'])
+  ul
+    li
+      img.logo(src='logo.svg' style='max-width: 36px;')
+
+    each name in links
+      +link(name)
