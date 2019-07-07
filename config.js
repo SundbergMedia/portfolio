@@ -20,7 +20,7 @@ module.exports = {
       './dist/' + version + '.js',
       './dist/**/*.html'
     ],
-    browsers: []
+    browser: []
   },
   pugConfig: {
     compileDebug: true,
