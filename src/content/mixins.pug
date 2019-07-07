@@ -23,3 +23,11 @@ mixin iconlist(icons)
         li
           +icon(item)
     br.clear
+
+mixin analytics(ID)
+  script(async src="https://www.googletagmanager.com/gtag/js?id=UA-143397962-1")
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-143397962-1');

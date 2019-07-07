@@ -7,10 +7,11 @@ block variables
 block content
   h2 Get in touch
   p.lead= contact
+  span#error.error
 
   form(action=contactHost method='post')
     input(name='email' placeholder='Your email' required)
     input(name='name' placeholder='Your name' required)
-    input(name='subject' placeholder='What can I help you with?' required)
+    input(name='subject' placeholder='What can I help you with?')
     textarea(name='message' placeholder='Message' required)
     button#send Send
