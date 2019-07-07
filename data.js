@@ -107,7 +107,8 @@ const data = {
   version: 'app1.0.0',
   lorem: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab nemo velit aspernatur culpa esse possimus corrupti deserunt, dicta consequatur distinctio, qui officiis praesentium quam consequuntur fugiat illum ipsa tempore.',
   contact: 'What can I do for your project? Get in touch and let us work together!',
-  contactHost: 'http://contact.sundbergmedia.com/'
+  contactHost: 'http://contact.sundbergmedia.com/',
+  analyticsID: 'UA-143397962-1'
 
 }
 
