@@ -17,8 +17,8 @@ const data = {
     'Task runners': ['Gulp', 'Webpack', 'Grunt'],
     'Databases': ['MySQL', 'MongoDB', 'Postgresql', 'Redis'],
     'Templating lanuages': ['Pug', 'Handlebars', 'HAML'],
-    'Servers': ['Apache', 'nginx', 'Docker'],
-    'Tools of choice': ['Visualstudio', 'GitHub', 'Slack', 'Ubuntu', 'Chrome']
+    'Servers & virtualization tools': ['Apache', 'nginx', 'Docker'],
+    'Weapons of choice': ['Visualstudio', 'GitHub', 'Slack', 'Ubuntu', 'Chrome']
   },
 
   projects: [
@@ -55,7 +55,7 @@ const data = {
 
     {
       name: 'Shotluckan Stammiskortet',
-      url: 'https://stammiskortet.se',
+      url: 'https://stammiskortet.shotluckan.se',
       description: 'Hybrid web-app for bar chain Shotluckan. Users can mark shots as favorites, vote, share on facebook, sort & filter... Shots data is administered through a custom wordpress plugin.',
       features: [
         'Hybrid web app',
@@ -84,6 +84,34 @@ const data = {
       url: 'https://codepen.io/theted/pen/zrvaYP',
       description: 'Guitar scale thing',
       keywords: ['javascript', 'jquery', 'pug', 'stylus', 'codepen']
+    },
+
+    {
+      name: 'GitHooks',
+      url: 'https://githooks.sundbergmedia.com',
+      description: 'Real-time github issues notifications dashboard utilizing websockets.',
+      keywords: ['NodeJS', 'Javascript', 'GitHub']
+    },
+
+    {
+      name: 'Scrape library',
+      url: 'https://github.com/theted/scrape-lib',
+      description: 'Light-weight toolkit for web scraping. Open source & available on github.',
+      keywords: ['NodeJS']
+    },
+
+    {
+      name: 'CSS grids',
+      url: 'https://grids.sundbergmedia.com',
+      description: 'Study in modern CSS layout frameworks, especially grid & flexbox models.',
+      keywords: ['HTML5', 'CSS3']
+    },
+
+    {
+      name: 'Nerja Villas',
+      url: 'http://nerjavillasforrent.com',
+      description: 'Booking system for husing agency Nerja villas in Spain - complete with it\'s own CMS.',
+      keywords: ['PHP', 'CodeIgniter', 'jQuery']
     }
 
   ],
