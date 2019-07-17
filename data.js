@@ -6,11 +6,12 @@ const data = {
   ad: 'Looking for new projects!',
   intro: [
     'I create highlty modern, optimized wehsites. I have >10 years of experience in web development and love to always learn new things.',
-    'I am currently studying web programming at Linneaus University to further develop my skills.'
+    'I am currently studying web programming at Linneaus University to further develop my skills.',
+    '...with an extra interest for automation and real-time communication'
   ],
 
   skills: {
-    'Programming languages': ['Javascript', 'NodeJS', 'PHP', 'Csharp'],
+    'Programming languages': ['JavaScript', 'NodeJS', 'PHP', 'CSharp'],
     'Javascript frameworks': ['React', 'AngularJS', 'jQuery'],
     'Back-end frameworks & libraries': ['CodeIgniter', 'Express', 'dot-net', 'WordPress'],
     'CSS preprocessors': ['Stylus', 'SASS', 'LESS'],
@@ -24,7 +25,7 @@ const data = {
   projects: [
     {
       name: 'BooKing',
-      url: 'https://www.youtube.com/watch?v=Oo0PQXGTSAs',
+      url: 'https://booking.sundbergmedia.com',
       description: 'Geographical booking system with SMS integration. Utilizing Google Maps directions API to find the closest users to a defined location.',
       features: [
         'Integration with Google Maps API',
@@ -36,6 +37,7 @@ const data = {
 
     {
       name: 'Personal web desktop',
+      url: 'https://pwd.sundbergmedia.com',
       description: 'Personal web desktop applikation. Implemented in vanilla Javascript using web components.',
       features: [
         'Vanilla ES6 web components',
@@ -135,7 +137,7 @@ const data = {
   version: 'app1.0.0',
   lorem: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab nemo velit aspernatur culpa esse possimus corrupti deserunt, dicta consequatur distinctio, qui officiis praesentium quam consequuntur fugiat illum ipsa tempore.',
   contact: 'What can I do for your project? Get in touch and let us work together!',
-  contactHost: 'http://contact.sundbergmedia.com/',
+  contactHost: 'https://contact.sundbergmedia.com/',
   analyticsID: 'UA-143397962-1'
 
 }
