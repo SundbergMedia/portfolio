@@ -1,2 +1,1 @@
-# Sundbergmedia - personal portfolio
-Personal portfolio - sundbergmedia.com
+# Vivian personal site
